@@ -1,24 +1,25 @@
-# README
+# Association
+This assignment consists of using the bcrypt gem to have a first approach at authentication in rails. We  have built an application we call ***Private Events*** that allows users to create posts and the authors of the posts are displayed only if as a User you are logged in.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built with 
+* Ruby on rails
+* Bootstrap
 
-Things you may want to cover:
+## Live demo
+https://sm-private-events.herokuapp.com/
+## Getting started
+To get started with the app, clone the repo and then install the needed gems:
 
-* Ruby version
+$ bundle install --without production Next, migrate the database:
 
-* System dependencies
+$ rails db:migrate Finally, run the test suite to verify that everything is working correctly:
 
-* Configuration
+$ rails test If the test suite passes, you'll be ready to run the app in a local server:
 
-* Database creation
+$ rails server
 
-* Database initialization
+## Authors
+#### Author 1
+* Github: Salum Habibu https://github.com/IBUNHABIBU 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Author 2 
