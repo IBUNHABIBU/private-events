@@ -12,7 +12,7 @@ RSpec.describe User, :type => :model do
      it "it ensures email presence" do 
       user = User.new(name:"Maya").save
       expect(user).to eq(false)
-    end
+     end
     it "it should save successfully" do 
       user = User.new(name:"Maya",email:"maya@gmail.com").save
       expect(user).to eq(true)
