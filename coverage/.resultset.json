@@ -228,6 +228,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -246,6 +247,10 @@
       "/home/ec2-user/environment/private-events/app/controllers/users_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -312,6 +317,6 @@
         ]
       }
     },
-    "timestamp": 1581352535
+    "timestamp": 1581353536
   }
 }
