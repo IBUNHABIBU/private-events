@@ -243,13 +243,6 @@
           null
         ]
       },
-      "/home/ec2-user/environment/private-events/spec/support/factory_girl.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/home/ec2-user/environment/private-events/app/controllers/users_controller.rb": {
         "lines": [
           1,
@@ -259,6 +252,47 @@
       "/home/ec2-user/environment/private-events/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/home/ec2-user/environment/private-events/spec/helpers/users_helper_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/ec2-user/environment/private-events/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -278,6 +312,6 @@
         ]
       }
     },
-    "timestamp": 1580902670
+    "timestamp": 1581352535
   }
 }
