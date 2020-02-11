@@ -229,6 +229,7 @@
           1,
           null,
           1,
+          1,
           null
         ]
       },
@@ -251,12 +252,39 @@
           null,
           1,
           null,
+          1,
+          null,
           null
         ]
       },
       "/home/ec2-user/environment/private-events/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/home/ec2-user/environment/private-events/spec/features/users_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -317,6 +345,6 @@
         ]
       }
     },
-    "timestamp": 1581353536
+    "timestamp": 1581425217
   }
 }
