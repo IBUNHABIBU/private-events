@@ -11,11 +11,6 @@ RSpec.feature "Users", type: :feature do
           click_button 'Create User'
           expect(page).to have_content("User was successful created.")
       end
-      scenario 'should fail' do 
-      end
   end 
-  context ' update user ' do 
-  end 
-  context ' destroy user ' do 
-  end 
+  
 end
