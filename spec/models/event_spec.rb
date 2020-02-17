@@ -1,18 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe Event, type: :model do
-  before(:all) do 
-    @user = User.new(name:"Maya",email:"maya@gmail.com",password_digest:"12345")
-  end
   context 'Creating User' do 
-      before(:all) do 
-          @user = User.new(name:"Maya",email:"maya@gmail.com")
-      end
-      it 'should give a user name' do 
-          expect(@user.name).to eq("Maya")
+    let(:event){build(:event)}
+      it 'should give event title' do 
+          expect(event.name).to eq("Sido")
       end 
-      it 'should give the user email' do 
-          expect(@user.email).to eq("maya@gmail.com")
+      it 'should give event description' do 
+          expect(event.description).to eq("small innovation hub")
+      end
+      it 'it shows the event date' do 
+          expect(event.date).to eq("2020-02-17 09:36:39")
       end
   end 
 end
