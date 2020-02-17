@@ -228,9 +228,10 @@
         "lines": [
           1,
           1,
-          4,
-          4,
-          4,
+          5,
+          5,
+          5,
+          5,
           null,
           null
         ]
@@ -278,11 +279,11 @@
           null,
           null,
           1,
-          8,
+          11,
           null,
           null,
           1,
-          8,
+          11,
           null,
           null
         ]
@@ -364,7 +365,7 @@
           null,
           1,
           1,
-          4,
+          5,
           1,
           1,
           null,
@@ -374,12 +375,18 @@
           1,
           1,
           null,
+          1,
+          1,
+          null,
+          null,
+          2,
           null,
           null
         ]
       },
       "/home/ec2-user/environment/private-events/app/models/event.rb": {
         "lines": [
+          1,
           1,
           null
         ]
@@ -408,6 +415,8 @@
           1,
           null,
           null,
+          2,
+          null,
           null
         ]
       },
@@ -416,10 +425,11 @@
           1,
           1,
           1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1581932569
+    "timestamp": 1581937092
   }
 }

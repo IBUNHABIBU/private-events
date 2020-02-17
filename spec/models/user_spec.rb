@@ -12,5 +12,7 @@ RSpec.describe User, :type => :model do
         user.email = "maya@gmail.com"
           expect(user.email).to eq("maya@gmail.com")
       end
+      
+       it { should have_many(:events) }
   end 
 end

@@ -12,5 +12,10 @@ RSpec.describe Event, type: :model do
       it 'it shows the event date' do 
           expect(event.date).to eq("2020-02-17 09:36:39")
       end
+      it 'it should give the event location' do 
+          expect(event.location).to eq("Musoma")
+      end
   end 
+  it { should belong_to(:user) }
+   
 end
