@@ -9,8 +9,11 @@
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
+      
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.submit("Create User", class: "btn btn-primary")%>
+      <%= f.submit(@user.new_record? ? "Create User":"Update account", class: "btn btn-primary")%>
     <% end %>
   </div>
 </div>

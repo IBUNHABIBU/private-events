@@ -7,7 +7,6 @@ RSpec.feature "events", type: :feature do
           within('form') do 
               fill_in 'Name', with: 'Sido'
               fill_in 'Description', with: 'small innovation hub'
-              fill_in 'Date', with: 2020-02-17 09:36:39
               fill_in 'Location', with: 'Musoma'
           end
           click_button 'Create Event'
