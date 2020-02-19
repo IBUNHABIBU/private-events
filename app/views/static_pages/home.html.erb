@@ -1,6 +1,11 @@
 <% provide(:title, "Home") %>
 <h1>PrivateEvents</h1>
-
+<h2>
+    Welcome to PrivateEvents <br>
+    <% if !logged_in? %>
+        <%= link_to "Sign up ", signup_path %>
+    <% end %>
+</h2>
 <p>
   <img class ="img" src="/assets/event.png" alt="events" />
 </p>
