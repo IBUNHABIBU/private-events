@@ -1,3 +1,4 @@
+ <div class='event-form'>
  <%= form_for (@event) do |f| %>
   <%= render 'shared/error_messages' %>
       <%= f.label :name %>
@@ -14,3 +15,4 @@
 
       <%= f.submit "Create Event", class: "btn btn-primary" %>
 <% end %>
+</div>
