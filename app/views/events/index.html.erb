@@ -2,10 +2,11 @@
 <% @event.each do |e| %>
         <ul>
             
-                Created by <%= e.user.name %><br>
-             <li><%= e.name %></li>
-            <li><%= e.description %></li>
-            <li><%= e.date %></li>
-            <li><%= e.location %></li>
+               
+             <li><strong>Title</strong><%= e.name %></li>
+            <li><strong>Description</strong><%= e.description %></li>
+            <li><strong>Date</strong><%= e.date %></li>
+            <li><strong>Location</strong><%= e.location %></li>
+             <strong>Created by</strong> <%= e.user.name %>
         </ul> 
 <% end %>
