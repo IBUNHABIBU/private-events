@@ -1,9 +1,11 @@
-<h1> All event </h1>
-<% @event.each do |event| %>
+<h1> Event created by <%= link_to "user name"  %> </h1>
+<% @event.each do |e| %>
         <ul>
-            <li><%= event.name%></li>
-            <li><%= event.description%></li>
-            <li><%= event.date%></li>
-            <li><%= event.location%></li>
+            
+                Created by <%= e.user.name %><br>
+             <li><%= e.name %></li>
+            <li><%= e.description %></li>
+            <li><%= e.date %></li>
+            <li><%= e.location %></li>
         </ul> 
 <% end %>
