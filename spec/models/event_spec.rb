@@ -1,21 +1,5 @@
 require 'rails_helper'
 
 RSpec.describe Event, type: :model do
-  context 'Creating User' do 
-    let(:event){build(:event)}
-      it 'should give event title' do 
-          expect(event.name).to eq("Sido")
-      end 
-      it 'should give event description' do 
-          expect(event.description).to eq("small innovation hub")
-      end
-      it 'it shows the event date' do 
-          expect(event.date).to eq("2020-02-17 09:36:39")
-      end
-      it 'it should give the event location' do 
-          expect(event.location).to eq("Musoma")
-      end
-  end 
-  it { should belong_to(:user) }
-   
+  pending "add some examples to (or delete) #{__FILE__}"
 end
