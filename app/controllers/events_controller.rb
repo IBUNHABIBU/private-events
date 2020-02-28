@@ -7,17 +7,18 @@ class EventsController < ApplicationController
       @events = current_user.events.build(events_params)
       if @events.save
         flash[:success] = "Event created successfully"
-        redirect_to user_event_path
+        redirect_to @events
       else
         render :new
       end
     end
     def index 
-      @user = User.find(params[:user_id])
-      @events = @user.events
+      @upcoming_events = Event.upcoming.order(date: :desc)
+      @past_events = Event.past.order(date: :desc)
     end
     def show
       @events = Event.find(params[:id])
+      @attendees = Invitation.where(event_id: @events.id)
     end
     
     private

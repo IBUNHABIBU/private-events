@@ -1,0 +1,9 @@
+<div class= "invitation">
+<%= form_for @invitation do |f| %>
+      <%= f.label :email, "Email" %>
+      <%= f.text_field :email, required: true, placeholder: 'example@mail.com' ,class: 'form-control m-2' %>
+      <%= f.hidden_field :event_id, value: params[:eventid] %>
+      <%= f.hidden_field :event_creator, value: current_user.id %>
+      <%= f.submit "Invite", class: "btn btn-primary" %>
+<% end %>
+</div>

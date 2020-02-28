@@ -1,12 +1,25 @@
-<h1> Event created by <%= link_to @user.name %> </h1>
-<% @events.each do |e| %>
-        <ul>
-            
-               
-             <li><strong>Title</strong><%= e.name %></li>
-            <li><strong>Description</strong><%= e.description %></li>
-            <li><strong>Date</strong><%= e.date %></li>
-            <li><strong>Location</strong><%= e.location %></li>
-             <strong>Created by</strong> <%= e.user.name %>
-        </ul> 
+<div class = "upcoming" >
+    <h1>Upcaming events</h1>
+<% @upcoming_events.each do |e| %>
+  
+      <ul>
+            <li><%= e.title %></li
+            <li><%= e.description %></li>
+            <li><%= e.date %></li>
+            <li><%= e.location %></li>
+      </ul>
+  
+<% end %>
+</div>
+<% @past_events.each do |e| %>
+  <div class = "past events" >
+      <h2>Past events</h2>
+      <ul>
+            <li><%= e.title %></li
+            <li><%= e.description %></li>
+            <li><%= e.date %></li>
+            <li><%= e.location %></li>
+      </ul>
+    
+  </div>
 <% end %>
