@@ -1,9 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
-  #has_and_belongs_to_many :events, :join_table => "events_users"
   has_many :events, dependent: :delete_all
   has_many :event_attendees, foreign_key: 'user_id'
-  has_many :attended_events, through: :event_attendees
+  has_many :attended_events, through: :event_attendees 
   has_many :invitations, foreign_key: 'invitee'
   has_many :invited_events, through: :invitations
   before_save { self.email = email.downcase }
@@ -14,6 +13,13 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
  
+  def upcoming_events
+    invited_events.upcoming
+  end
+
+  def past_events
+    invited_events.past
+  end
   # Returns the hash digest of the given string.
   def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost

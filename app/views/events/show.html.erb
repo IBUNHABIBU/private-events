@@ -1,6 +1,21 @@
-<ul>
-            <li><%= @events.title %></li>
-            <li><%= @events.description %></li>
-            <li><%= @events.date %></li>
-            <li><%= @events.location %></li>
-</ul> 
+
+            <h1><%= @events.title %></h1>
+            <p> Created by <%= @events.creator.name %></p>
+            <br>
+                <%= @events.description %>
+            
+            
+                <%= @events.date %>
+                <% if log_in(@events.creator) && @events.date > DateTime.now %>
+                    <%= link_to "Invite", invite_path(eventid: @events.id) , class: "btn btn-primary w-25 float-right" %>
+                <%end%>
+        <h2>Attendees</h2>
+        <%if @attendees.empty? %>
+            <h3 class="text-center">There is no attendees</h3>     
+        <%else%>
+            <% @attendees.each do |attendee|%>
+                <hr>
+                <h5><%=attendee.name%></h5>
+            <%end%>
+        <%end%>
+ 

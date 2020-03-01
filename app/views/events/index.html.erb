@@ -1,23 +1,9 @@
-<div class = "upcoming" >
-    <h1>Upcaming events</h1>
-<% @upcoming_events.each do |e| %>
-  
-      <ul>
-            <li><%= e.title %></li>
-            <li><%= e.description %></li>
-            <li><%= e.date %></li>
-            <li><%= e.location %></li>
-      </ul>
-  
-<% end %>
+<h1>All Events</h1>
+<div class = "upcoming-events">
+    <h2>Upcoming Events</h2>
+   <%= render 'events', obj: @upcoming_events %>
 </div>
-<div class = "past events" >
-    <h1>Past events</h1>
-<% @past_events.each do |e| %>
-      <ul>
-            <li><%= e.title %></li>
-            <li><%= e.description %></li>
-            <li><%= e.date %></li>
-            <li><%= e.location %></li>
-      </ul>
-<% end %>
+<div class = "past-events">
+    <h2>Past Events</h2>
+   <%= render 'events', obj: @past_events %>
+</div>

@@ -18,6 +18,6 @@ class InvitationsController < ApplicationController
   private
 
   def invitation_params
-    params.require(:invitation).permit(:email)
+    params.require(:invitation).permit(:email, :event_creator, :event_id)
   end
 end
