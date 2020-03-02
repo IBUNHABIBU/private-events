@@ -1,11 +1,11 @@
 
-            <h1><%= @events.title %></h1>
-            <p> Created by <%= @events.creator.name %></p>
+            <h1><%= @event.title %></h1>
+            <p> Created by <%= @event.creator.name %></p>
             <br>
-                <%= @events.description %>
-                <%= @events.date %>
-                <% if log_in(@events.creator) && @events.date > DateTime.now %>
-                    <%= link_to "Invite", invite_path(eventid: @events.id) , class: "btn btn-primary w-25 float-right" %>
+                <%= @event.description %>
+                <%= @event.date %>
+                <% if log_in(@event.creator) && @event.date > DateTime.now %>
+                    <%= link_to "Invite", invite_path(eventid: @event.id) , class: "btn btn-primary w-25 float-right" %>
                 <%end%>
         <h2>Attendees</h2>
         <%if @attendees.empty? %>
