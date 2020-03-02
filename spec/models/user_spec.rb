@@ -12,7 +12,12 @@ RSpec.describe User, :type => :model do
         user.email = "maya@gmail.com"
           expect(user.email).to eq("maya@gmail.com")
       end
-      
+  end 
+  context 'User Associations' do
        it { should have_many(:events) }
+        it { should have_many(:event_attendees) }
+         it { should have_many(:attended_events).through(:event_attendees) }
+          it { should have_many(:invitations).with_foreign_key('invitee') }
+           it { should have_many(:invited_events) }
   end 
 end
