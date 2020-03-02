@@ -1,5 +1,7 @@
 # Association
+
 This assignment consists of using the bcrypt gem to have a first approach at authentication in rails. We  have built an application we call ***Private Events*** that allows users to create posts and the authors of the posts are displayed only if as a User you are logged in.
+
 
 ## Built with 
 * Ruby on rails
@@ -7,6 +9,7 @@ This assignment consists of using the bcrypt gem to have a first approach at aut
 
 ## Live demo
 https://sm-private-events.herokuapp.com/
+
 ## Getting started
 To get started with the app, clone the repo and then install the needed gems:
 
@@ -18,8 +21,10 @@ $ rails test If the test suite passes, you'll be ready to run the app in a local
 
 $ rails server
 
+
 ## Authors
 #### Author 1
 * Github: Salum Habibu https://github.com/IBUNHABIBU 
 
 #### Author 2 
+
