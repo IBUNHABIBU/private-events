@@ -1,8 +1,8 @@
  
  <div class="event-form">
  
- <%= form_for (@events) do |f| %>
-  <%= render 'shared/error_messages', object:@events %>
+ <%= form_for (@event) do |f| %>
+  <%= render 'shared/error_messages', object:@event %>
   <div class="form-group">
       <%= f.label :title %>
       <%= f.text_field :title %>
