@@ -1,9 +1,15 @@
-<h1>All Events</h1>
-<div class = "upcoming-events">
-    <h2 class="upcoming">Upcoming Events</h2>
-   <%= render 'events', obj: @upcoming_events %>
-</div>
-<div class = "past-events">
-    <h2>Past Events</h2>
-   <%= render 'events', obj: @past_events %>
+
+
+<div class="container-fluid">
+    <h1>All Events</h1>
+    <div class="row">
+        <div class="col-xs-6 upcoming-events">
+            <h2 class="upcoming">Upcoming Events</h2>
+            <%= render 'events', obj: @upcoming_events %> 
+        </div>
+        <div class="col-xs-6 past-events">
+            <h2>Past Events</h2>
+            <%= render 'events', obj: @past_events %>
+        </div>
+    </div>
 </div>
