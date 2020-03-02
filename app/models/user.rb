@@ -6,10 +6,11 @@ class User < ApplicationRecord
   has_many :invitations, foreign_key: 'invitee'
   has_many :invited_events, through: :invitations
   before_save { self.email = email.downcase }
-  validates :name, presence: true, length: { maximum: 50 }
+  validates :name, presence: true, length: { maximum: 50 },uniqueness: { case_sensitive: false }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
   validates :email, presence: true, length: { maximum: 255 },
-                    format: { with: VALID_EMAIL_REGEX }
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: { case_sensitive: false }
   has_secure_password
  
   def upcoming_events
