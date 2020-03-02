@@ -67,3 +67,17 @@ p {
   margin:1rem;
   font-size:2rem;
 }
+
+/// grid system
+$breakpoints: ('small': 425px,
+    'medium': 768px,
+    'large': 1024px,
+    'huge': 1200px);
+$cols: 12;
+
+// mixin for grid system
+@mixin break($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
