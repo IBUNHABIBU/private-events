@@ -1,9 +1,9 @@
 
    <% obj.each do |event| %>
-   <ul>
-       <li><%= event.title %></li>
-       <li><%= event.description %></li>
-       <li><%= event.location %></li>
-       <li><%= event.date %></li>
-   </ul>
+   
+       <h4>Title:</h4><%= event.title %>
+       <h4>Description</h4><%= event.description %>
+       <h4>Location</h4><%= event.location %>
+       <h4>Date</h4><%= event.date %>
+   
    <% end %>
