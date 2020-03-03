@@ -1,5 +1,6 @@
 <div class= "invitation">
 <%= form_for @invitation do |f| %>
+<%= render 'shared/error_messages', object:@invitation %>
       <%= f.label :email, "Email" %>
       <%= f.text_field :email, required: true, placeholder: 'example@mail.com' ,class: 'form-control m-2' %>
       <%= f.hidden_field :event_id, value: params[:eventid] %>
