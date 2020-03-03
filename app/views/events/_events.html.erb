@@ -1,9 +1,9 @@
 
    <% obj.each do |event| %>
    
-       <h4>Title:</h4><%= event.title %>
-       <h4>Description</h4><%= event.description %>
-       <h4>Location</h4><%= event.location %>
-       <h4>Date</h4><%= event.date %>
-   
+       <h4 class="badge badge-light">Title:</h4>  <%= event.title %><br>
+       <h4 class="badge badge-light">Description:</h4>  <%= event.description %><br>
+       <h4 class="badge badge-light">Location:</h4>  <%= event.location %><br>
+       <h4 class="badge badge-light">Date:</h4>  <%= event.date %><br>
+       <hr>
    <% end %>

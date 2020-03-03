@@ -1,8 +1,9 @@
 <h1>All users</h1>
 <% @user.each do |u| %>
-   <ul>
-       <li><%= u.name %></li>
-       <li> <%= u.email %></li>
-   </ul>
-   <%= pluralize(u.events.count, "event") if u.events %>
+   
+      <span class="badge badge-light">Name:</span> <%= u.name %><br>
+       <span class="badge badge-light">Email:</span><%= u.email %><br>
+   
+   <span class="badge badge-light">Created:</span><%= pluralize(u.events.count, "event") if u.events %>
+   <hr>
 <% end %>
