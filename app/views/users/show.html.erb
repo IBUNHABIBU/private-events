@@ -6,7 +6,10 @@
 
 <h2>Events</h2>
 
-<%= render 'user_events', {events: @user.upcoming_events, type: 'upcoming'} %>
-        
-<%= render 'user_events', {events: @user.past_events, type: 'past'} %> 
-<%= render 'user_events', {events: @user.events, type: 'created'} %>
+   
+                <%= render 'user_events', {events: @user.upcoming_events, type: 'upcoming'} %>
+     
+                <%= render 'user_events', {events: @user.past_events, type: 'past'} %>         
+    
+                <%= render 'user_events', {events: @user.events, type: 'created'} %>         
+  
