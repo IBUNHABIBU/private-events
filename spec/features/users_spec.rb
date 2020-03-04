@@ -9,7 +9,7 @@ RSpec.feature 'Users', type: :feature do
         fill_in 'Email', with: 'maya@gmail.com'
       end
       click_button 'Create User'
-      expect(page).to have_content('User was successful created.')
+      expect(page).to have_content('Your account is created successfully')
     end
   end
 end

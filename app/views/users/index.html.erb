@@ -5,6 +5,6 @@
        <span class="badge badge-light">Email:</span><%= u.email %><br>
    
    <span class="badge badge-light">Created:</span><%= pluralize(u.events.count, "event") if u.events %>
-   <hr>
    <%= link_to 'Show',user_path(u) ,class: "btn btn-primary" %>
+   <hr>
 <% end %>

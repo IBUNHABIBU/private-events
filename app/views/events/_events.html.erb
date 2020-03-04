@@ -5,6 +5,8 @@
        <h4 class="badge badge-light">Description:</h4>  <%= event.description %><br>
        <h4 class="badge badge-light">Location:</h4>  <%= event.location %><br>
        <h4 class="badge badge-light">Date:</h4>  <%= event.date %><br>
+       <h4 class="badge badge-light">Created by:</h4>  <%= event.creator.name %><br>
+       
        <%= link_to 'Show',event_path(event), class: "btn btn-primary" %>
          <hr>
    <% end %>
