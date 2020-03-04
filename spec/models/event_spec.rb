@@ -18,10 +18,10 @@ RSpec.describe Event, type: :model do
    
   end
   context 'Event Associations' do
-    it { should belongs_to(:creator) }
-    it { should have_many(:attendees) }
-    it { should have_many(:attended_events).through(:event_attendees) }
-    it { should have_many(:invitations).with_foreign_key('invitee') }
-    it { should have_many(:invited_events) }
+    it { should belong_to(:creator) }
+    it { should have_many(:invitations).with_foreign_key('event_id') }
+    it { should have_many(:event_attendee).with_foreign_key('event_id') }
+    it { should have_many(:invitees).through(:invitations) }
+    
   end
 end
