@@ -544,11 +544,11 @@
           null,
           null,
           1,
-          1,
+          6,
           null,
           null,
           1,
-          1,
+          6,
           null,
           null
         ]
@@ -572,8 +572,8 @@
           null,
           null,
           1,
-          0,
-          0,
+          2,
+          2,
           null,
           null,
           1,
@@ -605,9 +605,9 @@
           null,
           null,
           1,
-          2,
+          1,
           0,
-          2,
+          1,
           0,
           0,
           0,
@@ -643,37 +643,33 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null
         ]
       },
-      "/home/ec2-user/environment/private-events/app/controllers/sessions_controller.rb": {
+      "/home/ec2-user/environment/private-events/app/models/event.rb": {
         "lines": [
           1,
-          null,
-          null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
           1,
-          0,
-          0,
-          null,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          null
+        ]
+      },
+      "/home/ec2-user/environment/private-events/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1583420608
+    "timestamp": 1583429528
   }
 }
