@@ -4,6 +4,6 @@ FactoryBot.define do
     description { 'small innovation hub' }
     location { 'Musoma' }
     date { '2020-02-27 11:44:40' }
-    user { nil }
+    user { user_id }
   end
 end
