@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-  before(:each) do
-    user = create(:user)
-  end
   context 'GET #new' do
     it 'returns a success response' do
       get :new
