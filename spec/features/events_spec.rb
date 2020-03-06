@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'events', type: :feature do
   context ' create new event ' do
     scenario 'should be successful' do
-      visit new_event_path
+      Click_link('Create new Event')
       within('form') do
         fill_in 'Title', with: 'Sido'
         fill_in 'Description', with: 'small innovation hub'
