@@ -27,4 +27,4 @@ $ rails server
 * Github: Salum Habibu https://github.com/IBUNHABIBU 
 
 #### Author 2 
-
+* Github: Maya Elfeky https://github.com/maya88en/
